@@ -24,19 +24,6 @@ public class NoodlesServlet extends HttpServlet {
 
 		 String noodles = Kitchen.makeNoodles(vegetable);
 		 writer.println(noodles);
-//		BasicConfigurator.configure();
-//		PrintWriter writer = response.getWriter();
-//		String vegetable = request.getParameter("vegetable");
-//		
-//
-//		if (vegetable == null){
-//			vegetable = "Tomato";
-//		}
-//
-//		log.info("The vegetable in Noodles is " + vegetable);
-//
-//		writer.println("<html><body>");
-//		writer.println("<h1> Noodles with " + vegetable + "</h1>");
-//		writer.println("</body></html>");
+
 	}
 }
