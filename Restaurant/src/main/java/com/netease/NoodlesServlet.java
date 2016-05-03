@@ -12,7 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import com.netease.Kitchen;
 import org.apache.log4j.Logger;
 import org.apache.log4j.BasicConfigurator;
-
+/*
+ * author: leslie
+ * date: 3 May 2016
+ */
 public class NoodlesServlet extends HttpServlet {
 	private static Logger log = Logger.getLogger(NoodlesServlet.class);
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
