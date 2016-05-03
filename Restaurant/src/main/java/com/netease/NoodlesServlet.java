@@ -16,24 +16,24 @@ import org.apache.log4j.BasicConfigurator;
 public class NoodlesServlet extends HttpServlet {
 	private static Logger log = Logger.getLogger(NoodlesServlet.class);
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// PrintWriter writer = response.getWriter();
-		// String vegetable = request.getParameter("vegetable");
+		 PrintWriter writer = response.getWriter();
+		 String vegetable = request.getParameter("vegetable");
 
-		// String noodles = Kitchen.makeNoodles(vegetable);
-		// writer.println(noodles);
-		BasicConfigurator.configure();
-		PrintWriter writer = response.getWriter();
-		String vegetable = request.getParameter("vegetable");
-		
-
-		if (vegetable == null){
-			vegetable = "Tomato";
-		}
-
-		log.info("The vegetable in Noodles is " + vegetable);
-
-		writer.println("<html><body>");
-		writer.println("<h1> Noodles with " + vegetable + "</h1>");
-		writer.println("</body></html>");
+		 String noodles = Kitchen.makeNoodles(vegetable);
+		 writer.println(noodles);
+//		BasicConfigurator.configure();
+//		PrintWriter writer = response.getWriter();
+//		String vegetable = request.getParameter("vegetable");
+//		
+//
+//		if (vegetable == null){
+//			vegetable = "Tomato";
+//		}
+//
+//		log.info("The vegetable in Noodles is " + vegetable);
+//
+//		writer.println("<html><body>");
+//		writer.println("<h1> Noodles with " + vegetable + "</h1>");
+//		writer.println("</body></html>");
 	}
 }
